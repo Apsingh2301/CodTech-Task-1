@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">🌦️</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="#">Cities</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Search for cities">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="weather-info">
+                <div class="current-weather">
+                    <h1 id="city-name">City</h1>
+                    <div class="temperature" id="temperature">0°</div>
+                    <div class="weather-icon" id="weather-icon">☀️</div>
+                    <div class="details">
+                        <p id="rain-chance">Chance of rain: 0%</p>
+                        <p>Real Feel: <span id="real-feel">0°</span></p>
+                        <p>Wind: <span id="wind-speed">0 km/h</span></p>
+                        <p>UV Index: <span id="uv-index">0</span></p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="today-forecast">
+                        <h2>Today's Forecast</h2>
+                        <div class="forecast-details">
+                            <div class="forecast-time">6:00 AM <span>25° 🌥️</span></div>
+                            <div class="forecast-time">9:00 AM <span>28° ⛅</span></div>
+                            <div class="forecast-time">12:00 PM <span>33° ☀️</span></div>
+                            <div class="forecast-time">3:00 PM <span>34° ☀️</span></div>
+                            <div class="forecast-time">6:00 PM <span>32° ☀️</span></div>
+                            <div class="forecast-time">9:00 PM <span>30° 🌥️</span></div>
+                        </div>
+                    </div>
+                    <div class="weekly-forecast">
+                        <h2>7-Day Forecast</h2>
+                        <div class="weekly-details">
+                            <div class="day">Today <span>36/22 ☀️</span></div>
+                            <div class="day">Tue <span>37/21 ☀️</span></div>
+                            <div class="day">Wed <span>37/21 ☀️</span></div>
+                            <div class="day">Thu <span>37/21 ☁️</span></div>
+                            <div class="day">Fri <span>37/21 ☁️</span></div>
+                            <div class="day">Sat <span>37/21 🌧️</span></div>
+                            <div class="day">Sun <span>37/21 ⚡</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
